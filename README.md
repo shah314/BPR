@@ -12,6 +12,8 @@ The implementation requires python3, pandas and numpy. The dimensionality can be
 
 The hit rate @ position 10 is around **51%** on the MovieLens [2] data set with 600 users, 9000 movies and 100,000 ratings. The data is uploaded to the data folder for convenience.
 
+The MovieLens data sets can be found on the [MovieLens Web Page](https://grouplens.org/datasets/movielens/).
+
 Usage:
   
     Run: python mainbpr.py
