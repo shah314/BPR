@@ -6,7 +6,7 @@ This implementation uses the MovieLens data set [2] but the implementation can b
 
 BPR learns latent factors of a user and an item (movie) and based on inner products of user and item embeddings, it ranks movies in the decreasing order of the predicted rating. The algorithm can be used for any application where implicit or explicit preferences of guests are available.
 
-BPR puts a zero mean Gaussian prior on the learnt latent factors (embeddings) which results in an L2 regularization term in the loss function.
+BPR puts a zero mean Gaussian prior on the learnt latent factors (embeddings) which results in an L2 regularization term in the loss function (the algorithm performs pretty well even without this extra term).
 
 The implementation requires python3, pandas and numpy. The dimensionality can be changed in util.py. Currently it uses a dimensionality of 50 and 10 iterations. For larger dimensionality and more number of iterations, it might be useful if there is an access to a cluster of servers or a GPU.
 
