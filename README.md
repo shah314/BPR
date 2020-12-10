@@ -2,7 +2,7 @@
 
 Bayesian Personalized Ranking (BPR) [1] is a recommender systems algorithm that can be used to personalize the experience of a user on a movie rental service, an online book store, a retail store and so on.
 
-This implementation uses the MovieLens data set [2] but the implementation can be used for any recomender system application.
+This implementation uses the MovieLens data set [2] but the implementation can be used for any recommender system application.
 
 BPR learns latent factors of a user and an item (movie) and based on inner products of user and item embeddings, it ranks movies in the decreasing order of the predicted rating. The algorithm can be used for any application where implicit or explicit preferences of guests are available. The algorithm is similar to collaborative filtering algorithms, and can be used for matrix factorization/completion problems.
 
