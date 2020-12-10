@@ -1,7 +1,7 @@
 # BPR
-## Implementation of Bayesian Personalized Ranking [1] in Python
+## Bayesian Personalized Ranking in Python
 
-Bayesian Personalized Ranking (BPR) is a recommender systems algorithm that can be used to personalize the experience of a user on a movie rental service, an online book store, a retail store and so on.
+Bayesian Personalized Ranking (BPR) [1] is a recommender systems algorithm that can be used to personalize the experience of a user on a movie rental service, an online book store, a retail store and so on.
 
 This implementation uses the MovieLens data set [2] but the implementation can be used for any recomender system application.
 
@@ -11,12 +11,15 @@ BPR puts a zero mean Gaussian prior on the learnt latent factors (embeddings) wh
 
 The implementation requires python3, pandas and numpy. The dimensionality can be changed in util.py. Currently it uses a dimensionality of 50 and 10 iterations. For larger dimensionality and more number of iterations, it might be useful if there is an access to a cluster of servers or a GPU.
 
-The hit rate @ position 10 is around **51%**.
+The hit rate @ position 10 is around **51%** on the MovieLens [2] data set with 600 users, 9000 movies and 100,000 ratings. The data is uploaded to the data folder for convenience.
 
 Usage:
-
-  Change the file names in mainbpr.py
-  Run: **python3 mainbpr.py**
+  
+    Run: python mainbpr.py
+  
+    Change the file names in mainbpr.py
+  
+    The parameters of the algorithm are in util.py
 
 This code is part of a project in the Data Mining course at JHU.
 
