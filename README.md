@@ -5,9 +5,20 @@ Bayesian Personalized Ranking (BPR) is a recommender systems algorithm that can 
 
 This implementation uses the MovieLens data set [2] but the implementation can be used for any recomender system application.
 
-BPR leanrs latent factors of a user and an item (movie) and based on inner products of user and item embeddings, it ranks movies in the decreasing order of the predicted rating. The algorithm can be used for any application where implicit or explicit preferences of guests are available.
+BPR learns latent factors of a user and an item (movie) and based on inner products of user and item embeddings, it ranks movies in the decreasing order of the predicted rating. The algorithm can be used for any application where implicit or explicit preferences of guests are available.
 
 BPR puts a zero mean Gaussian prior on the learnt latent factors (embeddings) which results in an L2 regularization term in the loss function.
+
+The implementation requires python3, pandas and numpy. The dimensionality can be changed in util.py. Currently it uses a dimensionality of 50 and 10 iterations. For larger dimensionality and more number of iterations, it might be useful if there is an access to a cluster of servers or a GPU.
+
+The hit rate @ position 10 is around **51%**.
+
+Usage:
+
+  Change the file names in mainbpr.py
+  Run: **python3 mainbpr.py**
+
+This code is part of a project in the Data Mining course at JHU.
 
 [1] Rendle, Steffen, et al. "BPR: Bayesian personalized ranking from implicit feedback." arXiv preprint arXiv:1205.2618 (2012).
 
