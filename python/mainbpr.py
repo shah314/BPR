@@ -24,9 +24,10 @@ iterations = 10
 
 for i in range(iterations):
     print("Iteration " + str(i))
-    print("Propagating...")
     bpr_update(users, movies)
-    print("Finished propagating.")
+
+print("Finished updating.")
+print("Calculating Hit Rate...")
 
 hits, denom, rms, rmsall = hit_rate(users, movies)
 

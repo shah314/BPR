@@ -38,20 +38,20 @@ def bpr_update(users, movies):
                 diff = Vi - Vj
                 d = firstterm * diff
                 derivative = d
-                Vu = Vu + lr * derivative
+                Vu = Vu + lr * (derivative + 0.1 * np.linalg.norm(Vu))
                 users[u1].factor = Vu
 
                 # ITEM POSITIVE FACTOR
                 d = firstterm * Vu
                 derivative = d
-                Vi = Vi + lr * derivative
+                Vi = Vi + lr * (derivative + 0.1 * np.linalg.norm(Vi))
                 movies[rand_pos].factor = Vi
 
                 #ITEM NEGATIVE FACTOR
                 negvu = -1 * Vu
                 d = firstterm * negvu
                 derivative = d
-                Vj = Vj + lr * derivative
+                Vj = Vj + lr * (derivative + 0.1 * np.linalg.norm(Vj))
                 movies[rand_neg].factor = Vj
 
 def calculate_first_term(Vu, Vi, Vj):
