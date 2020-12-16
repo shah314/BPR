@@ -12,7 +12,7 @@ BPR puts a zero mean Gaussian prior on the learnt latent factors (embeddings) wh
 
 The implementation requires python3, pandas and numpy. The dimensionality can be changed in util.py. Currently it uses a dimensionality of 50 and 10 iterations. For larger dimensionality and more number of iterations, it might be useful if there is an access to a cluster of servers or a GPU.
 
-The hit rate @ position 10 is around **71%** (on a 30% test set) on the MovieLens [2] data set with 600 users, 9000 movies and 100,000 ratings. The data is uploaded to the data folder for convenience.
+The hit rate @ position 10 is around **71%** (on a 30% test set) (the hit rate was initially 51% but I was able to do some experimentation and improve this to 71%) on the MovieLens [2] data set with 600 users, 9000 movies and 100,000 ratings. The data is uploaded to the data folder for convenience.
 
 The MovieLens data sets can be found on the [MovieLens Web Page](https://grouplens.org/datasets/movielens/).
 
