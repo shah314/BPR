@@ -1,6 +1,6 @@
 # Bayesian Personalized Ranking (BPR) in Python
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4314125.svg)](https://doi.org/10.5281/zenodo.4314125)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4326887.svg)](https://doi.org/10.5281/zenodo.4326887)
 
 Bayesian Personalized Ranking (BPR) [1] is a recommender systems algorithm that can be used to personalize the experience of a user on a movie rental service, an online book store, a retail store and so on.
 
