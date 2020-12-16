@@ -48,12 +48,11 @@ def read_ratings(filename):
                     user1.movies_train[movieid] = rating1
                     users[userid] = user1
                     trainuserdict[userid] = 1
-
+            else:
                 testcount = testcount + 1
                 if userid in users.keys():
                     user1 = users[userid]
                     user1.movies_test[movieid] = rating1
-
                 else:
                     user1 = user(userid)
                     user1.factor = random_vector()

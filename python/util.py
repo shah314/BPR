@@ -20,6 +20,9 @@ def min_rating():
 def learning_rate():
     return 1
 
+def get_lambda():
+    return 0.1
+
 def random_vector():
     dim = dimension()
     cov_mtx = cov_matrix()
